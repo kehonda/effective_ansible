@@ -3,13 +3,13 @@
   tasks:
     - name: create directory
       file:
-        path: /Users/kentaro_honda/tmp
+        path: /home/ec2-user/tmp
         state: directory
-        owner: kentaro_honda
+        owner: ec2-user
         mode: 0755
     - name: copy file
       copy:
         src: /Users/kentaro_honda/projects/effective_ansible/sec2/test.txt
-        dest: /Users/kentaro_honda/tmp
-        owner: kentaro_honda
+        dest: /home/ec2-user/tmp
+        owner: ec2-user
         mode: 0644
